@@ -13,6 +13,7 @@ class Produit:
         self.seuil_alerte = seuil_alerte
         self.actif = actif
 
+# PART 3 — Magic Methods (__str__, __eq__, __len__)
     def __str__(self):
         statut = "Actif" if self.actif else "Inactif"
         alerte = " ⚠ STOCK BAS" if self.est_en_alerte() else ""
@@ -26,6 +27,7 @@ class Produit:
         )
 
     @property
+# PART 4 — Decorators (@property)
     def valeur_stock(self) -> float:
         return self.prix_achat * self.quantite
 
