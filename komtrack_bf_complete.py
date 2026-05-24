@@ -27,7 +27,7 @@ class Produit:
         )
 
     @property
-# PART 4 — Decorators (@property)
+# PART 4 — Decorators (@property, @staticmethod, @classmethod)
     def valeur_stock(self) -> float:
         return self.prix_achat * self.quantite
 
